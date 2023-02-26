@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Report.Core.Services;
 
 namespace Report.Api.Controllers
 {
@@ -6,14 +7,14 @@ namespace Report.Api.Controllers
     [ApiController]
     public class ReportController : ControllerBase
     {
+        private readonly IReportService _reportService;
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok();
+            var res = _reportService.GetAllAsync();
 
-            //var res = await _unitOfService.User.GetAllAsync();
-
-            //return res != null ? Ok(res) : BadRequest();
+            return res != null ? Ok(res) : BadRequest();
         }
     }
 }

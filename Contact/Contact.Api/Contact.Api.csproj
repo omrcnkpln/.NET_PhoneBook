@@ -11,9 +11,16 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+
+		<PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+		<!--<PackageReference Include="Google.Protobuf" Version="3.20.1" />-->
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Contact.Service\Contact.Service.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="..\Protos\Contact.proto" GrpcServices="Server" />
 	</ItemGroup>
 </Project>

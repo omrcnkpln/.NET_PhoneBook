@@ -1,12 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using Report.Core.Entity;
+using Report.Core.Repositories;
 
 namespace Report.Infrastructure.Repositories
 {
-    internal class GenericRepository
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
+        internal DbContext _context;
+        internal DbSet<T> _entities;
+
+        public GenericRepository(DbContext context)
+        {
+            _context = context;
+            _entities = _context.Set<T>();
+        }
+
+        public virtual async Task AddAsync(T entity)
+        {
+            await _entities.AddAsync(entity);
+        }
+
+        public virtual async Task<IEnumerable<T>> AllAsync()
+        {
+            return await _entities.ToListAsync();
+        }
     }
 }

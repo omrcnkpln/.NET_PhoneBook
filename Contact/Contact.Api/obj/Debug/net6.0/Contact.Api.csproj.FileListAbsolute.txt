@@ -45,3 +45,10 @@ D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\obj\Debug\net6
 D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Humanizer.dll
 D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Google.Protobuf.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.Core.Api.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.Net.Client.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Api\bin\Debug\net6.0\Grpc.Net.Common.dll

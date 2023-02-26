@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "ContactProto";
+
+package contact;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/struct.proto";
+
+
+//methods
+service ContactService {
+    rpc GetAllContacts (Empty) returns (ContactListDTO);
+}
+
+
+//dtos
+message Empty{
+}
+
+message Response{
+    bool gRPCSucceeded = 1;
+}
+
+message GetByIdDTO{
+    int32 Id = 1;
+    string UUID = 2;
+}
+
+message ContactDTO{
+    bool gRPCSucceeded = 9;
+    int32 Id = 1;
+    string UUID = 2;
+    string Name = 3;
+    string Code = 4;
+    string Symbol = 5;
+    bool IsBaseCurrencies = 6;
+    double BaseCurrencyBuyRate = 7;
+    double BaseCurrencySellRate = 8;
+}
+
+message ContactListDTO{
+    repeated ContactDTO Contact = 1;
+}

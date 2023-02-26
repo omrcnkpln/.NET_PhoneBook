@@ -2,5 +2,6 @@
 {
     public interface IUnitOfWork
     {
+        IReportRepository Report { get; }
     }
 }
