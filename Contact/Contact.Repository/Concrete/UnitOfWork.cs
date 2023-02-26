@@ -5,11 +5,11 @@ namespace Contact.Repository.Concrete
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public readonly PhoneBookDbContext _context;
+        public readonly PhoneBookContactDbContext _context;
 
         public readonly UserRepository _userRepository;
 
-        public UnitOfWork(PhoneBookDbContext context)
+        public UnitOfWork(PhoneBookContactDbContext context)
         {
             _context = context;
         }

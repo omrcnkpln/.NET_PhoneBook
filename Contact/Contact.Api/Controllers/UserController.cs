@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Contact.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
         private readonly IUnitOfService _unitOfService;

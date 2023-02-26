@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Contact.Repository.Migrations
 {
-    [DbContext(typeof(PhoneBookDbContext))]
+    [DbContext(typeof(PhoneBookContactDbContext))]
     [Migration("20230226081022_Contact_Table_Added")]
     partial class Contact_Table_Added
     {

@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Contact.Repository.Migrations
 {
-    [DbContext(typeof(PhoneBookDbContext))]
+    [DbContext(typeof(PhoneBookContactDbContext))]
     partial class PhoneBookDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

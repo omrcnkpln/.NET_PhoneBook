@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Contact.Repository.Context
 {
-    public class PhoneBookDbContext : DbContext
+    public class PhoneBookContactDbContext : DbContext
     {
         public DbSet<User>? Users { get; set; }
         public DbSet<Core.Models.Contact>? Contacts { get; set; }
 
-        public PhoneBookDbContext(DbContextOptions<PhoneBookDbContext> options)
+        public PhoneBookContactDbContext(DbContextOptions<PhoneBookContactDbContext> options)
          : base(options)
         {
         }
