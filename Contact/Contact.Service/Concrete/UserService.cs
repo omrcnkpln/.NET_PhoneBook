@@ -25,6 +25,18 @@ namespace Contact.Service.Concrete
             }
         }
 
+        public async Task<IList<User>> GetAllWithIncludesAsync()
+        {
+            try
+            {
+                return await _unitOfWork.User.GetAllAsync(null, x => x.Contacts);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<bool> AddAsync(UserRequest userRequest)
         {
             try
