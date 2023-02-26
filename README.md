@@ -9,6 +9,8 @@
 - [x] Create models and dbcontext for codefirst with efcore.  
 - [x] Will be used Postgresql db on docker.
 - [x] Connection string has been written Application.json.
+- [x] UserRepository create.
+- [x] Set Up For Repository Pattern.
 - [ ] Crud Opr. for phone book.
 
 
