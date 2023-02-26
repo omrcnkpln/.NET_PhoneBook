@@ -1,0 +1,12 @@
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\bin\Debug\net6.0\Contact.Core.deps.json
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\bin\Debug\net6.0\Contact.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\bin\Debug\net6.0\Contact.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.csproj.AssemblyReference.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.AssemblyInfoInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.AssemblyInfo.cs
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.csproj.CoreCompileInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\refint\Contact.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\Contact.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Core\obj\Debug\net6.0\ref\Contact.Core.dll

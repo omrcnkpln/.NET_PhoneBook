@@ -7,8 +7,8 @@
 - [x] Create N-tier arc for this mikroservice.
 - [x] Add ef core to project
 - [x] Create models and dbcontext for codefirst with efcore.  
-- [ ] Will be used Postgresql db on docker.
-- [ ] Connection string has been written Application.json.
+- [x] Will be used Postgresql db on docker.
+- [x] Connection string has been written Application.json.
 - [ ] Crud Opr. for phone book.
 
 
@@ -22,3 +22,6 @@
 
 - [ ] Create postman collection.
 - [ ] Write more clear documentation.
+
+To Run Post Container
+	- docker run --name docker_postgres -e POSTGRES_PASSWORD=test -d -p 5432:5432 -v postgres:/var/lib/postgresql/data postgres
