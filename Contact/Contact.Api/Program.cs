@@ -1,4 +1,5 @@
 using Contact.Repository;
+using Contact.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddRepositories(Configuration);
-//builder.Services.AddCustomeServices();
+builder.Services.AddServices();
 
 var app = builder.Build();
 
