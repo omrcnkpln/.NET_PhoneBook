@@ -24,26 +24,27 @@ namespace ContactProto {
     static ContactReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1Db250YWN0LnByb3RvEgdjb250YWN0Gh9nb29nbGUvcHJvdG9idWYvdGlt",
-            "ZXN0YW1wLnByb3RvGhxnb29nbGUvcHJvdG9idWYvc3RydWN0LnByb3RvIgcK",
-            "BUVtcHR5IiEKCFJlc3BvbnNlEhUKDWdSUENTdWNjZWVkZWQYASABKAgiJgoK",
-            "R2V0QnlJZERUTxIKCgJJZBgBIAEoBRIMCgRVVUlEGAIgASgJIr4BCgpDb250",
-            "YWN0RFRPEhUKDWdSUENTdWNjZWVkZWQYCSABKAgSCgoCSWQYASABKAUSDAoE",
-            "VVVJRBgCIAEoCRIMCgROYW1lGAMgASgJEgwKBENvZGUYBCABKAkSDgoGU3lt",
-            "Ym9sGAUgASgJEhgKEElzQmFzZUN1cnJlbmNpZXMYBiABKAgSGwoTQmFzZUN1",
-            "cnJlbmN5QnV5UmF0ZRgHIAEoARIcChRCYXNlQ3VycmVuY3lTZWxsUmF0ZRgI",
-            "IAEoASI2Cg5Db250YWN0TGlzdERUTxIkCgdDb250YWN0GAEgAygLMhMuY29u",
-            "dGFjdC5Db250YWN0RFRPMksKDkNvbnRhY3RTZXJ2aWNlEjkKDkdldEFsbENv",
-            "bnRhY3RzEg4uY29udGFjdC5FbXB0eRoXLmNvbnRhY3QuQ29udGFjdExpc3RE",
-            "VE9CD6oCDENvbnRhY3RQcm90b2IGcHJvdG8z"));
+            "Cg1Db250YWN0LnByb3RvEgdjb250YWN0IgcKBUVtcHR5IiEKCFJlc3BvbnNl",
+            "EhUKDWdSUENTdWNjZWVkZWQYASABKAgiJgoKR2V0QnlJZERUTxIKCgJJZBgB",
+            "IAEoBRIMCgRVVUlEGAIgASgJIoUBCgdVc2VyRFRPEhUKDWdSUENTdWNjZWVk",
+            "ZWQYCSABKAgSDAoEVVVJRBgCIAEoCRIMCgROYW1lGAMgASgJEg8KB1N1cm5h",
+            "bWUYBCABKAkSDwoHQ29tcGFueRgFIAEoCRIlCghDb250YWN0cxgGIAMoCzIT",
+            "LmNvbnRhY3QuQ29udGFjdERUTyJbCgpDb250YWN0RFRPEhUKDWdSUENTdWNj",
+            "ZWVkZWQYBCABKAgSDAoEVVVJRBgBIAEoCRITCgtDb250YWN0VHlwZRgCIAEo",
+            "BRITCgtDb250YWN0SW5mbxgDIAEoCSJFCgtVc2VyTGlzdERUTxIVCg1nUlBD",
+            "U3VjY2VlZGVkGAIgASgIEh8KBVVzZXJzGAEgAygLMhAuY29udGFjdC5Vc2Vy",
+            "RFRPMkUKDkNvbnRhY3RTZXJ2aWNlEjMKC0dldEFsbFVzZXJzEg4uY29udGFj",
+            "dC5FbXB0eRoULmNvbnRhY3QuVXNlckxpc3REVE9CD6oCDENvbnRhY3RQcm90",
+            "b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
+          new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.Empty), global::ContactProto.Empty.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.Response), global::ContactProto.Response.Parser, new[]{ "GRPCSucceeded" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.GetByIdDTO), global::ContactProto.GetByIdDTO.Parser, new[]{ "Id", "UUID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.ContactDTO), global::ContactProto.ContactDTO.Parser, new[]{ "GRPCSucceeded", "Id", "UUID", "Name", "Code", "Symbol", "IsBaseCurrencies", "BaseCurrencyBuyRate", "BaseCurrencySellRate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.ContactListDTO), global::ContactProto.ContactListDTO.Parser, new[]{ "Contact" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.UserDTO), global::ContactProto.UserDTO.Parser, new[]{ "GRPCSucceeded", "UUID", "Name", "Surname", "Company", "Contacts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.ContactDTO), global::ContactProto.ContactDTO.Parser, new[]{ "GRPCSucceeded", "UUID", "ContactType", "ContactInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ContactProto.UserListDTO), global::ContactProto.UserListDTO.Parser, new[]{ "GRPCSucceeded", "Users" }, null, null, null, null)
           }));
     }
     #endregion
@@ -569,15 +570,15 @@ namespace ContactProto {
 
   }
 
-  public sealed partial class ContactDTO : pb::IMessage<ContactDTO>
+  public sealed partial class UserDTO : pb::IMessage<UserDTO>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ContactDTO> _parser = new pb::MessageParser<ContactDTO>(() => new ContactDTO());
+    private static readonly pb::MessageParser<UserDTO> _parser = new pb::MessageParser<UserDTO>(() => new UserDTO());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ContactDTO> Parser { get { return _parser; } }
+    public static pb::MessageParser<UserDTO> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -590,29 +591,26 @@ namespace ContactProto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactDTO() {
+    public UserDTO() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactDTO(ContactDTO other) : this() {
+    public UserDTO(UserDTO other) : this() {
       gRPCSucceeded_ = other.gRPCSucceeded_;
-      id_ = other.id_;
       uUID_ = other.uUID_;
       name_ = other.name_;
-      code_ = other.code_;
-      symbol_ = other.symbol_;
-      isBaseCurrencies_ = other.isBaseCurrencies_;
-      baseCurrencyBuyRate_ = other.baseCurrencyBuyRate_;
-      baseCurrencySellRate_ = other.baseCurrencySellRate_;
+      surname_ = other.surname_;
+      company_ = other.company_;
+      contacts_ = other.contacts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactDTO Clone() {
-      return new ContactDTO(this);
+    public UserDTO Clone() {
+      return new UserDTO(this);
     }
 
     /// <summary>Field number for the "gRPCSucceeded" field.</summary>
@@ -623,17 +621,6 @@ namespace ContactProto {
       get { return gRPCSucceeded_; }
       set {
         gRPCSucceeded_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
       }
     }
 
@@ -659,58 +646,353 @@ namespace ContactProto {
       }
     }
 
-    /// <summary>Field number for the "Code" field.</summary>
-    public const int CodeFieldNumber = 4;
-    private string code_ = "";
+    /// <summary>Field number for the "Surname" field.</summary>
+    public const int SurnameFieldNumber = 4;
+    private string surname_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Code {
-      get { return code_; }
+    public string Surname {
+      get { return surname_; }
       set {
-        code_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        surname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "Symbol" field.</summary>
-    public const int SymbolFieldNumber = 5;
-    private string symbol_ = "";
+    /// <summary>Field number for the "Company" field.</summary>
+    public const int CompanyFieldNumber = 5;
+    private string company_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Symbol {
-      get { return symbol_; }
+    public string Company {
+      get { return company_; }
       set {
-        symbol_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        company_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "IsBaseCurrencies" field.</summary>
-    public const int IsBaseCurrenciesFieldNumber = 6;
-    private bool isBaseCurrencies_;
+    /// <summary>Field number for the "Contacts" field.</summary>
+    public const int ContactsFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::ContactProto.ContactDTO> _repeated_contacts_codec
+        = pb::FieldCodec.ForMessage(50, global::ContactProto.ContactDTO.Parser);
+    private readonly pbc::RepeatedField<global::ContactProto.ContactDTO> contacts_ = new pbc::RepeatedField<global::ContactProto.ContactDTO>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsBaseCurrencies {
-      get { return isBaseCurrencies_; }
+    public pbc::RepeatedField<global::ContactProto.ContactDTO> Contacts {
+      get { return contacts_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserDTO);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserDTO other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GRPCSucceeded != other.GRPCSucceeded) return false;
+      if (UUID != other.UUID) return false;
+      if (Name != other.Name) return false;
+      if (Surname != other.Surname) return false;
+      if (Company != other.Company) return false;
+      if(!contacts_.Equals(other.contacts_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GRPCSucceeded != false) hash ^= GRPCSucceeded.GetHashCode();
+      if (UUID.Length != 0) hash ^= UUID.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Surname.Length != 0) hash ^= Surname.GetHashCode();
+      if (Company.Length != 0) hash ^= Company.GetHashCode();
+      hash ^= contacts_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (UUID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UUID);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Name);
+      }
+      if (Surname.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Surname);
+      }
+      if (Company.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Company);
+      }
+      contacts_.WriteTo(output, _repeated_contacts_codec);
+      if (GRPCSucceeded != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(GRPCSucceeded);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (UUID.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(UUID);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Name);
+      }
+      if (Surname.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Surname);
+      }
+      if (Company.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Company);
+      }
+      contacts_.WriteTo(ref output, _repeated_contacts_codec);
+      if (GRPCSucceeded != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(GRPCSucceeded);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GRPCSucceeded != false) {
+        size += 1 + 1;
+      }
+      if (UUID.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(UUID);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Surname.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Surname);
+      }
+      if (Company.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Company);
+      }
+      size += contacts_.CalculateSize(_repeated_contacts_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserDTO other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GRPCSucceeded != false) {
+        GRPCSucceeded = other.GRPCSucceeded;
+      }
+      if (other.UUID.Length != 0) {
+        UUID = other.UUID;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Surname.Length != 0) {
+        Surname = other.Surname;
+      }
+      if (other.Company.Length != 0) {
+        Company = other.Company;
+      }
+      contacts_.Add(other.contacts_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            UUID = input.ReadString();
+            break;
+          }
+          case 26: {
+            Name = input.ReadString();
+            break;
+          }
+          case 34: {
+            Surname = input.ReadString();
+            break;
+          }
+          case 42: {
+            Company = input.ReadString();
+            break;
+          }
+          case 50: {
+            contacts_.AddEntriesFrom(input, _repeated_contacts_codec);
+            break;
+          }
+          case 72: {
+            GRPCSucceeded = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            UUID = input.ReadString();
+            break;
+          }
+          case 26: {
+            Name = input.ReadString();
+            break;
+          }
+          case 34: {
+            Surname = input.ReadString();
+            break;
+          }
+          case 42: {
+            Company = input.ReadString();
+            break;
+          }
+          case 50: {
+            contacts_.AddEntriesFrom(ref input, _repeated_contacts_codec);
+            break;
+          }
+          case 72: {
+            GRPCSucceeded = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class ContactDTO : pb::IMessage<ContactDTO>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ContactDTO> _parser = new pb::MessageParser<ContactDTO>(() => new ContactDTO());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ContactDTO> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ContactProto.ContactReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ContactDTO() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ContactDTO(ContactDTO other) : this() {
+      gRPCSucceeded_ = other.gRPCSucceeded_;
+      uUID_ = other.uUID_;
+      contactType_ = other.contactType_;
+      contactInfo_ = other.contactInfo_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ContactDTO Clone() {
+      return new ContactDTO(this);
+    }
+
+    /// <summary>Field number for the "gRPCSucceeded" field.</summary>
+    public const int GRPCSucceededFieldNumber = 4;
+    private bool gRPCSucceeded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool GRPCSucceeded {
+      get { return gRPCSucceeded_; }
       set {
-        isBaseCurrencies_ = value;
+        gRPCSucceeded_ = value;
       }
     }
 
-    /// <summary>Field number for the "BaseCurrencyBuyRate" field.</summary>
-    public const int BaseCurrencyBuyRateFieldNumber = 7;
-    private double baseCurrencyBuyRate_;
+    /// <summary>Field number for the "UUID" field.</summary>
+    public const int UUIDFieldNumber = 1;
+    private string uUID_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double BaseCurrencyBuyRate {
-      get { return baseCurrencyBuyRate_; }
+    public string UUID {
+      get { return uUID_; }
       set {
-        baseCurrencyBuyRate_ = value;
+        uUID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "BaseCurrencySellRate" field.</summary>
-    public const int BaseCurrencySellRateFieldNumber = 8;
-    private double baseCurrencySellRate_;
+    /// <summary>Field number for the "ContactType" field.</summary>
+    public const int ContactTypeFieldNumber = 2;
+    private int contactType_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double BaseCurrencySellRate {
-      get { return baseCurrencySellRate_; }
+    public int ContactType {
+      get { return contactType_; }
       set {
-        baseCurrencySellRate_ = value;
+        contactType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ContactInfo" field.</summary>
+    public const int ContactInfoFieldNumber = 3;
+    private string contactInfo_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ContactInfo {
+      get { return contactInfo_; }
+      set {
+        contactInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -728,14 +1010,9 @@ namespace ContactProto {
         return true;
       }
       if (GRPCSucceeded != other.GRPCSucceeded) return false;
-      if (Id != other.Id) return false;
       if (UUID != other.UUID) return false;
-      if (Name != other.Name) return false;
-      if (Code != other.Code) return false;
-      if (Symbol != other.Symbol) return false;
-      if (IsBaseCurrencies != other.IsBaseCurrencies) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BaseCurrencyBuyRate, other.BaseCurrencyBuyRate)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BaseCurrencySellRate, other.BaseCurrencySellRate)) return false;
+      if (ContactType != other.ContactType) return false;
+      if (ContactInfo != other.ContactInfo) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -743,14 +1020,9 @@ namespace ContactProto {
     public override int GetHashCode() {
       int hash = 1;
       if (GRPCSucceeded != false) hash ^= GRPCSucceeded.GetHashCode();
-      if (Id != 0) hash ^= Id.GetHashCode();
       if (UUID.Length != 0) hash ^= UUID.GetHashCode();
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Code.Length != 0) hash ^= Code.GetHashCode();
-      if (Symbol.Length != 0) hash ^= Symbol.GetHashCode();
-      if (IsBaseCurrencies != false) hash ^= IsBaseCurrencies.GetHashCode();
-      if (BaseCurrencyBuyRate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BaseCurrencyBuyRate);
-      if (BaseCurrencySellRate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BaseCurrencySellRate);
+      if (ContactType != 0) hash ^= ContactType.GetHashCode();
+      if (ContactInfo.Length != 0) hash ^= ContactInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -767,40 +1039,20 @@ namespace ContactProto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
       if (UUID.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(UUID);
       }
-      if (Name.Length != 0) {
+      if (ContactType != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ContactType);
+      }
+      if (ContactInfo.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
-      }
-      if (Code.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Code);
-      }
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Symbol);
-      }
-      if (IsBaseCurrencies != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsBaseCurrencies);
-      }
-      if (BaseCurrencyBuyRate != 0D) {
-        output.WriteRawTag(57);
-        output.WriteDouble(BaseCurrencyBuyRate);
-      }
-      if (BaseCurrencySellRate != 0D) {
-        output.WriteRawTag(65);
-        output.WriteDouble(BaseCurrencySellRate);
+        output.WriteString(ContactInfo);
       }
       if (GRPCSucceeded != false) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(32);
         output.WriteBool(GRPCSucceeded);
       }
       if (_unknownFields != null) {
@@ -812,40 +1064,20 @@ namespace ContactProto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
       if (UUID.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(UUID);
       }
-      if (Name.Length != 0) {
+      if (ContactType != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ContactType);
+      }
+      if (ContactInfo.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(Name);
-      }
-      if (Code.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Code);
-      }
-      if (Symbol.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Symbol);
-      }
-      if (IsBaseCurrencies != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(IsBaseCurrencies);
-      }
-      if (BaseCurrencyBuyRate != 0D) {
-        output.WriteRawTag(57);
-        output.WriteDouble(BaseCurrencyBuyRate);
-      }
-      if (BaseCurrencySellRate != 0D) {
-        output.WriteRawTag(65);
-        output.WriteDouble(BaseCurrencySellRate);
+        output.WriteString(ContactInfo);
       }
       if (GRPCSucceeded != false) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(32);
         output.WriteBool(GRPCSucceeded);
       }
       if (_unknownFields != null) {
@@ -860,29 +1092,14 @@ namespace ContactProto {
       if (GRPCSucceeded != false) {
         size += 1 + 1;
       }
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
       if (UUID.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UUID);
       }
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      if (ContactType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContactType);
       }
-      if (Code.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Code);
-      }
-      if (Symbol.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Symbol);
-      }
-      if (IsBaseCurrencies != false) {
-        size += 1 + 1;
-      }
-      if (BaseCurrencyBuyRate != 0D) {
-        size += 1 + 8;
-      }
-      if (BaseCurrencySellRate != 0D) {
-        size += 1 + 8;
+      if (ContactInfo.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ContactInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -898,29 +1115,14 @@ namespace ContactProto {
       if (other.GRPCSucceeded != false) {
         GRPCSucceeded = other.GRPCSucceeded;
       }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
       if (other.UUID.Length != 0) {
         UUID = other.UUID;
       }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
+      if (other.ContactType != 0) {
+        ContactType = other.ContactType;
       }
-      if (other.Code.Length != 0) {
-        Code = other.Code;
-      }
-      if (other.Symbol.Length != 0) {
-        Symbol = other.Symbol;
-      }
-      if (other.IsBaseCurrencies != false) {
-        IsBaseCurrencies = other.IsBaseCurrencies;
-      }
-      if (other.BaseCurrencyBuyRate != 0D) {
-        BaseCurrencyBuyRate = other.BaseCurrencyBuyRate;
-      }
-      if (other.BaseCurrencySellRate != 0D) {
-        BaseCurrencySellRate = other.BaseCurrencySellRate;
+      if (other.ContactInfo.Length != 0) {
+        ContactInfo = other.ContactInfo;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -936,39 +1138,19 @@ namespace ContactProto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
+          case 10: {
             UUID = input.ReadString();
             break;
           }
+          case 16: {
+            ContactType = input.ReadInt32();
+            break;
+          }
           case 26: {
-            Name = input.ReadString();
+            ContactInfo = input.ReadString();
             break;
           }
-          case 34: {
-            Code = input.ReadString();
-            break;
-          }
-          case 42: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 48: {
-            IsBaseCurrencies = input.ReadBool();
-            break;
-          }
-          case 57: {
-            BaseCurrencyBuyRate = input.ReadDouble();
-            break;
-          }
-          case 65: {
-            BaseCurrencySellRate = input.ReadDouble();
-            break;
-          }
-          case 72: {
+          case 32: {
             GRPCSucceeded = input.ReadBool();
             break;
           }
@@ -986,39 +1168,19 @@ namespace ContactProto {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 18: {
+          case 10: {
             UUID = input.ReadString();
             break;
           }
+          case 16: {
+            ContactType = input.ReadInt32();
+            break;
+          }
           case 26: {
-            Name = input.ReadString();
+            ContactInfo = input.ReadString();
             break;
           }
-          case 34: {
-            Code = input.ReadString();
-            break;
-          }
-          case 42: {
-            Symbol = input.ReadString();
-            break;
-          }
-          case 48: {
-            IsBaseCurrencies = input.ReadBool();
-            break;
-          }
-          case 57: {
-            BaseCurrencyBuyRate = input.ReadDouble();
-            break;
-          }
-          case 65: {
-            BaseCurrencySellRate = input.ReadDouble();
-            break;
-          }
-          case 72: {
+          case 32: {
             GRPCSucceeded = input.ReadBool();
             break;
           }
@@ -1029,19 +1191,19 @@ namespace ContactProto {
 
   }
 
-  public sealed partial class ContactListDTO : pb::IMessage<ContactListDTO>
+  public sealed partial class UserListDTO : pb::IMessage<UserListDTO>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ContactListDTO> _parser = new pb::MessageParser<ContactListDTO>(() => new ContactListDTO());
+    private static readonly pb::MessageParser<UserListDTO> _parser = new pb::MessageParser<UserListDTO>(() => new UserListDTO());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ContactListDTO> Parser { get { return _parser; } }
+    public static pb::MessageParser<UserListDTO> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::ContactProto.ContactReflection.Descriptor.MessageTypes[4]; }
+      get { return global::ContactProto.ContactReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1050,54 +1212,68 @@ namespace ContactProto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactListDTO() {
+    public UserListDTO() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactListDTO(ContactListDTO other) : this() {
-      contact_ = other.contact_.Clone();
+    public UserListDTO(UserListDTO other) : this() {
+      gRPCSucceeded_ = other.gRPCSucceeded_;
+      users_ = other.users_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ContactListDTO Clone() {
-      return new ContactListDTO(this);
+    public UserListDTO Clone() {
+      return new UserListDTO(this);
     }
 
-    /// <summary>Field number for the "Contact" field.</summary>
-    public const int ContactFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::ContactProto.ContactDTO> _repeated_contact_codec
-        = pb::FieldCodec.ForMessage(10, global::ContactProto.ContactDTO.Parser);
-    private readonly pbc::RepeatedField<global::ContactProto.ContactDTO> contact_ = new pbc::RepeatedField<global::ContactProto.ContactDTO>();
+    /// <summary>Field number for the "gRPCSucceeded" field.</summary>
+    public const int GRPCSucceededFieldNumber = 2;
+    private bool gRPCSucceeded_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::ContactProto.ContactDTO> Contact {
-      get { return contact_; }
+    public bool GRPCSucceeded {
+      get { return gRPCSucceeded_; }
+      set {
+        gRPCSucceeded_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Users" field.</summary>
+    public const int UsersFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::ContactProto.UserDTO> _repeated_users_codec
+        = pb::FieldCodec.ForMessage(10, global::ContactProto.UserDTO.Parser);
+    private readonly pbc::RepeatedField<global::ContactProto.UserDTO> users_ = new pbc::RepeatedField<global::ContactProto.UserDTO>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::ContactProto.UserDTO> Users {
+      get { return users_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as ContactListDTO);
+      return Equals(other as UserListDTO);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ContactListDTO other) {
+    public bool Equals(UserListDTO other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!contact_.Equals(other.contact_)) return false;
+      if (GRPCSucceeded != other.GRPCSucceeded) return false;
+      if(!users_.Equals(other.users_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= contact_.GetHashCode();
+      if (GRPCSucceeded != false) hash ^= GRPCSucceeded.GetHashCode();
+      hash ^= users_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1114,7 +1290,11 @@ namespace ContactProto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      contact_.WriteTo(output, _repeated_contact_codec);
+      users_.WriteTo(output, _repeated_users_codec);
+      if (GRPCSucceeded != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(GRPCSucceeded);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1124,7 +1304,11 @@ namespace ContactProto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      contact_.WriteTo(ref output, _repeated_contact_codec);
+      users_.WriteTo(ref output, _repeated_users_codec);
+      if (GRPCSucceeded != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(GRPCSucceeded);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1134,7 +1318,10 @@ namespace ContactProto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += contact_.CalculateSize(_repeated_contact_codec);
+      if (GRPCSucceeded != false) {
+        size += 1 + 1;
+      }
+      size += users_.CalculateSize(_repeated_users_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1142,11 +1329,14 @@ namespace ContactProto {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ContactListDTO other) {
+    public void MergeFrom(UserListDTO other) {
       if (other == null) {
         return;
       }
-      contact_.Add(other.contact_);
+      if (other.GRPCSucceeded != false) {
+        GRPCSucceeded = other.GRPCSucceeded;
+      }
+      users_.Add(other.users_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1162,7 +1352,11 @@ namespace ContactProto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            contact_.AddEntriesFrom(input, _repeated_contact_codec);
+            users_.AddEntriesFrom(input, _repeated_users_codec);
+            break;
+          }
+          case 16: {
+            GRPCSucceeded = input.ReadBool();
             break;
           }
         }
@@ -1180,7 +1374,11 @@ namespace ContactProto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            contact_.AddEntriesFrom(ref input, _repeated_contact_codec);
+            users_.AddEntriesFrom(ref input, _repeated_users_codec);
+            break;
+          }
+          case 16: {
+            GRPCSucceeded = input.ReadBool();
             break;
           }
         }

@@ -10,10 +10,10 @@ IWebHostEnvironment environment = builder.Environment;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // Configuration Datetime For postgresql
 
+builder.Services.AddGrpc();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddGrpc();
 
 builder.Services.AddRepositories(Configuration);
 builder.Services.AddServices();

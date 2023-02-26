@@ -51,15 +51,15 @@ namespace ContactProto {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ContactProto.Empty> __Marshaller_contact_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ContactProto.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::ContactProto.ContactListDTO> __Marshaller_contact_ContactListDTO = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ContactProto.ContactListDTO.Parser));
+    static readonly grpc::Marshaller<global::ContactProto.UserListDTO> __Marshaller_contact_UserListDTO = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ContactProto.UserListDTO.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ContactProto.Empty, global::ContactProto.ContactListDTO> __Method_GetAllContacts = new grpc::Method<global::ContactProto.Empty, global::ContactProto.ContactListDTO>(
+    static readonly grpc::Method<global::ContactProto.Empty, global::ContactProto.UserListDTO> __Method_GetAllUsers = new grpc::Method<global::ContactProto.Empty, global::ContactProto.UserListDTO>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetAllContacts",
+        "GetAllUsers",
         __Marshaller_contact_Empty,
-        __Marshaller_contact_ContactListDTO);
+        __Marshaller_contact_UserListDTO);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -72,7 +72,7 @@ namespace ContactProto {
     public abstract partial class ContactServiceBase
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::ContactProto.ContactListDTO> GetAllContacts(global::ContactProto.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ContactProto.UserListDTO> GetAllUsers(global::ContactProto.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -85,7 +85,7 @@ namespace ContactProto {
     public static grpc::ServerServiceDefinition BindService(ContactServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GetAllContacts, serviceImpl.GetAllContacts).Build();
+          .AddMethod(__Method_GetAllUsers, serviceImpl.GetAllUsers).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -95,7 +95,7 @@ namespace ContactProto {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ContactServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllContacts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ContactProto.Empty, global::ContactProto.ContactListDTO>(serviceImpl.GetAllContacts));
+      serviceBinder.AddMethod(__Method_GetAllUsers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ContactProto.Empty, global::ContactProto.UserListDTO>(serviceImpl.GetAllUsers));
     }
 
   }

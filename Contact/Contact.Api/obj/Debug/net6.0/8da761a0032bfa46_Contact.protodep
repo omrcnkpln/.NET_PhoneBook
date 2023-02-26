@@ -1,4 +1,2 @@
 obj\Debug\net6.0/Contact.cs \
-obj\Debug\net6.0/ContactGrpc.cs: C:/Users/kapla/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
- C:/Users/kapla/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/struct.proto\
- ../Protos/Contact.proto
+obj\Debug\net6.0/ContactGrpc.cs: ../Protos/Contact.proto

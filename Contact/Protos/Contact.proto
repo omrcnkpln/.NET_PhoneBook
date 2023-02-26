@@ -4,13 +4,13 @@ option csharp_namespace = "ContactProto";
 
 package contact;
 
-import "google/protobuf/timestamp.proto";
-import "google/protobuf/struct.proto";
+//import "google/protobuf/timestamp.proto";
+//import "google/protobuf/struct.proto";
 
 
 //methods
 service ContactService {
-    rpc GetAllContacts (Empty) returns (ContactListDTO);
+    rpc GetAllUsers (Empty) returns (UserListDTO);
 }
 
 
@@ -27,18 +27,27 @@ message GetByIdDTO{
     string UUID = 2;
 }
 
-message ContactDTO{
+message UserDTO{
     bool gRPCSucceeded = 9;
-    int32 Id = 1;
     string UUID = 2;
     string Name = 3;
-    string Code = 4;
-    string Symbol = 5;
-    bool IsBaseCurrencies = 6;
-    double BaseCurrencyBuyRate = 7;
-    double BaseCurrencySellRate = 8;
+    string Surname = 4;
+    string Company = 5;
+    repeated ContactDTO Contacts = 6;
 }
 
-message ContactListDTO{
-    repeated ContactDTO Contact = 1;
+message ContactDTO{
+    bool gRPCSucceeded = 4;
+    string UUID = 1;
+    int32 ContactType = 2;
+    string ContactInfo = 3;
 }
+
+message UserListDTO{
+    bool gRPCSucceeded = 2;
+    repeated UserDTO Users = 1;
+}
+
+//message ContactListDTO{
+//    repeated ContactDTO Contact = 1;
+//}
