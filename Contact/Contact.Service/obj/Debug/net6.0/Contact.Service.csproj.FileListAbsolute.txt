@@ -1,0 +1,17 @@
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Service.deps.json
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Service.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Service.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Repository.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Repository.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\bin\Debug\net6.0\Contact.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.csproj.AssemblyReference.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.AssemblyInfoInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.AssemblyInfo.cs
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.csproj.CoreCompileInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.csproj.CopyComplete
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\refint\Contact.Service.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\Contact.Service.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Contact\Contact.Service\obj\Debug\net6.0\ref\Contact.Service.dll

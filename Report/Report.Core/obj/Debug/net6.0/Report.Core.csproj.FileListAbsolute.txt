@@ -1,0 +1,12 @@
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\bin\Debug\net6.0\Report.Core.deps.json
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\bin\Debug\net6.0\Report.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\bin\Debug\net6.0\Report.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.csproj.AssemblyReference.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.AssemblyInfoInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.AssemblyInfo.cs
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.csproj.CoreCompileInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\refint\Report.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\Report.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Core\obj\Debug\net6.0\ref\Report.Core.dll
