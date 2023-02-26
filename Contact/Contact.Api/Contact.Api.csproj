@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Contact.Service\Contact.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
