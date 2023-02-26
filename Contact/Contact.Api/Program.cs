@@ -1,4 +1,6 @@
+using Contact.Api.Communication;
 using Contact.Repository;
+using Contact.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +13,10 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); // Configura
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddGrpc();
 
 builder.Services.AddRepositories(Configuration);
-//builder.Services.AddCustomeServices();
+builder.Services.AddServices();
 
 var app = builder.Build();
 
@@ -29,5 +32,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapGrpcService<ContactGrpc>();
 
 app.Run();

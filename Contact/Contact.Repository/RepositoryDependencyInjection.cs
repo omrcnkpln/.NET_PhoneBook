@@ -18,7 +18,7 @@ namespace Contact.Repository
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            services.AddDbContext<PhoneBookDbContext>(options =>
+            services.AddDbContext<PhoneBookContactDbContext>(options =>
             {
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
             });

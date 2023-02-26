@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Contact.Repository.Abstract
+﻿namespace Contact.Repository.Abstract
 {
     public interface IUnitOfWork
     {
+        IUserRepository User { get; }
+
+        Task SaveChanges();
     }
 }

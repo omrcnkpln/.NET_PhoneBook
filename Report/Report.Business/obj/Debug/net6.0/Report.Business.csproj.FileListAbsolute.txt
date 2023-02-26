@@ -1,0 +1,17 @@
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Business.deps.json
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Business.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Business.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Core.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Infrastructure.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Core.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\bin\Debug\net6.0\Report.Infrastructure.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.csproj.AssemblyReference.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.AssemblyInfoInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.AssemblyInfo.cs
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.csproj.CoreCompileInputs.cache
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.csproj.CopyComplete
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\refint\Report.Business.dll
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\Report.Business.pdb
+D:\omer_files\development\dotnet\CaseAutoKing\Report\Report.Business\obj\Debug\net6.0\ref\Report.Business.dll

@@ -23,6 +23,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Infrastructure", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Core", "Report\Report.Core\Report.Core.csproj", "{2D1D3E39-B079-4168-AB96-01129764FAD5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{166B2F03-7015-4356-9CE9-9549D9F43667}"
+	ProjectSection(SolutionItems) = preProject
+		Contact\Protos\Contact.proto = Contact\Protos\Contact.proto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +79,7 @@ Global
 		{FB9B7866-59FB-48E0-B826-06DD0020398A} = {024E8516-1AE1-4EA9-8710-4FE02E7AD6F8}
 		{280B9E9E-C312-4F8B-ABC3-C28C26C733DC} = {024E8516-1AE1-4EA9-8710-4FE02E7AD6F8}
 		{2D1D3E39-B079-4168-AB96-01129764FAD5} = {024E8516-1AE1-4EA9-8710-4FE02E7AD6F8}
+		{166B2F03-7015-4356-9CE9-9549D9F43667} = {DC2BEDE4-4DC3-45B1-986D-27A2DF86B723}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3494CC28-9075-4723-9A04-EE48C268320B}
